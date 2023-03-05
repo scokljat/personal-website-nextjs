@@ -1,11 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
+import Portfolio from "@/components/portfolio/Portfolio";
+import About from "@/components/About";
+import Services from "@/components/services/Services";
+import Contact from "@/components/contact/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -14,7 +19,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <Header data={data.personalInformations} />
+        <Portfolio />
+        <About />
+        <Services />
+        <Contact />
+      </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/api/personal-website");
+  const data = await res.json();
+
+  return {
+    props: { data },
+    revalidate: 1,
+  };
 }

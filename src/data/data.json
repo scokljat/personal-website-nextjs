@@ -1,0 +1,17 @@
+{
+  "personalInformations": {
+    "name": "Selma Čokljat",
+    "role": "Software Engineer",
+    "description": "Software Developer adept in bringing forth expertise in design, testing and maintenance of web applications. Proficient in various platforms and languages. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
+    "resume": "/selma_cokljat_resume.pdf",
+    "image": "/selma.jpg",
+    "contactLinks": [
+      { "id": 1, "name": "https://github.com/scokljat", "logo": "/github.png" },
+      {
+        "id": 2,
+        "name": "https://www.linkedin.com/in/selma-cokljat/",
+        "logo": "/linkedin.png"
+      }
+    ]
+  }
+}

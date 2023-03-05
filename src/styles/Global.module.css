@@ -1,0 +1,28 @@
+.title {
+  color: #c85c8e;
+  margin-bottom: 0;
+}
+
+.title_line {
+  border: 2px solid #c85c8e;
+  width: 5%;
+}
+
+.button {
+  background: #c85c8e;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 35px;
+  box-shadow: 0 0 5px 0 #c85c8e;
+  border: 1px solid transparent;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.button:hover {
+  background: #ffbaba;
+  box-shadow: 0 0 10px 0 #ffbaba;
+  color: #000;
+}

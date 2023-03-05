@@ -1,0 +1,96 @@
+.portfolio {
+  padding-top: 3rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #c85c8e;
+  margin-bottom: 0;
+}
+
+.line {
+  border: 2px solid #c85c8e;
+  width: 5%;
+}
+
+.links {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.links li {
+  margin-left: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.links li:hover,
+.links li:active {
+  background-color: #c85c8e;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.image {
+  border-radius: 25px;
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: #fff;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #c85c8e;
+}
+
+@media (max-width: 1400px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1040px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
