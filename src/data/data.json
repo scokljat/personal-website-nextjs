@@ -13,5 +13,45 @@
         "logo": "/linkedin.png"
       }
     ]
-  }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Ask app",
+      "image": "",
+      "githubLink": "https://github.com/scokljat/ask-app-client",
+      "demoLink": "https://ask-app-client-two.vercel.app/",
+      "category": "React",
+      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+    },
+    {
+      "id": 2,
+      "name": "Welcome Bot",
+      "image": "/welcome-bot.png",
+      "githubLink": "https://github.com/scokljat/welcome-bot-frontend",
+      "demoLink": "https://welcome-bot-nsoft.netlify.app/auth",
+      "category": "Vue",
+      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+    },
+    {
+      "id": 3,
+      "name": "Welcome Bot",
+      "image": "",
+      "githubLink": "https://github.com/scokljat/welcome-bot-frontend",
+      "demoLink": "",
+      "category": "Vue",
+      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+    }
+  ],
+  "skills": [
+    { "id": 1, "name": "React", "image": "/react.png" },
+    { "id": 2, "name": "Next", "image": "/next.svg" },
+    { "id": 3, "name": "Vue", "image": "/vue.png" },
+    { "id": 4, "name": "JavaScript", "image": "/java-script.png" },
+    { "id": 5, "name": "Node", "image": "/node.png" },
+    { "id": 6, "name": "HTML", "image": "/html.png" },
+    { "id": 7, "name": "CSS", "image": "/css.png" },
+    { "id": 8, "name": "MongoDB", "image": "/mongo.png" },
+    { "id": 9, "name": "PostgreSQL", "image": "/postgresql.png" }
+  ]
 }
