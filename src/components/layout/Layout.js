@@ -1,8 +1,6 @@
-import classes from "./Layout.module.css";
-import { motion, AnimatePresence } from "framer-motion";
-import { useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+import classes from "./Layout.module.css";
 
 function Layout({ children }) {
   const router = useRouter();
