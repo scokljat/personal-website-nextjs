@@ -6,24 +6,16 @@
   align-items: center;
 }
 
-.title {
-  color: #c85c8e;
-  margin-bottom: 0;
-}
-
-.line {
-  border: 2px solid #c85c8e;
-  width: 5%;
-}
-
 .links {
-  margin-top: 2rem;
   display: flex;
+  gap: 0.93rem;
+  margin-bottom: 1.8rem;
+  margin-top: 2rem;
+  padding: 0rem;
 }
 
 .links li {
-  margin-left: 30px;
-  font-size: 17px;
+  font-size: 1.06rem;
   cursor: pointer;
   list-style: none;
   transition: 0.5s;
@@ -32,8 +24,8 @@
 .links li:hover,
 .links li:active {
   background-color: #c85c8e;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.3rem 0.63rem;
+  border-radius: 0.3rem;
 }
 
 .content {
@@ -42,12 +34,36 @@
   gap: 2rem;
 }
 
-.image {
-  border-radius: 25px;
-}
-
 .box {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #1f242d;
+  padding: 2.5rem 0.63rem;
+  border-radius: 1.56rem;
+  border: 0.06rem solid #1f242d;
+}
+
+.overlay {
+  position: absolute;
+  background: rgb(50, 57, 70, 0.9);
+  bottom: 0rem;
+  width: 100%;
+  padding: 1.25rem 0.63rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.63rem;
   cursor: pointer;
 }
 
@@ -55,26 +71,32 @@
   opacity: 1;
 }
 
-.overlay {
-  position: absolute;
-  background: #fff;
-  bottom: 0px;
-  width: 100%;
-  padding: 20px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  opacity: 0;
-  transition: 0.5s;
+.overlay h1 {
+  margin: 0rem;
+  font-size: 1.25rem;
+  color: #c85c8e;
 }
 
-.overlay h1 {
-  margin: 0;
-  font-size: 20px;
-  color: #c85c8e;
+.linksContainer {
+  display: flex;
+  gap: 0.63rem;
+}
+
+.link {
+  background: #c85c8e;
+  padding: 0.43rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  border-radius: 0.3rem;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.link:hover {
+  background: #ffbaba;
+  color: #000;
 }
 
 @media (max-width: 1400px) {
@@ -89,8 +111,36 @@
   }
 }
 
+@media (max-width: 860px) {
+  .box h1 {
+    font-size: 0.93rem;
+  }
+
+  .box p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    height: auto;
+  }
+
+  .links li {
+    font-size: 0.93rem;
+  }
+
+  .link {
+    padding: 0.3rem;
+  }
+}
+
 @media (max-width: 750px) {
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .links {
+    gap: 0.63rem;
   }
 }

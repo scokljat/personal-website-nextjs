@@ -1,55 +1,69 @@
+import Link from "next/link";
 import { useState } from "react";
-import { data } from "../../utils/Constants";
+import { projectCategories } from "../../utils/Constants";
 import classes from "./Portfolio.module.css";
-import Image from "next/image";
+import globalClasses from "../../styles/Global.module.css";
 
-function Portfolio() {
-  const [item, setItem] = useState(data);
+function Portfolio({ data }) {
+  const [catData, setCatData] = useState(data);
   const filterItem = (cateItem) => {
-    const updateItem = data.filter((curElem) => {
-      return curElem.category === cateItem;
-    });
-    setItem(updateItem);
+    if (cateItem === "All") {
+      setCatData(data);
+    } else {
+      const updateItem = data.filter((curElem) => {
+        return curElem.category === cateItem;
+      });
+      setCatData(updateItem);
+    }
   };
+
   return (
     <section className={classes.portfolio} id="portfolio">
-      <h1 className={classes.title}>Projects</h1>
-      <hr className={classes.line} />
+      <h1 className={globalClasses.title}>Projects</h1>
+      <hr className={globalClasses.title_line} />
       <ul className={classes.links}>
-        <li
-          className={classes.active}
-          onClick={() => {
-            setItem(data);
-          }}
-        >
-          All
-        </li>
-        <li
-          className={classes.active}
-          onClick={() => {
-            filterItem("Products");
-          }}
-        >
-          Products
-        </li>
+        {projectCategories.map((category, index) => (
+          <li
+            className={classes.active}
+            key={index}
+            onClick={() => {
+              filterItem(category);
+            }}
+          >
+            {category}
+          </li>
+        ))}
       </ul>
 
       <div className={classes.content}>
-        {item.map((elem, index) => {
-          const { cover, title } = elem;
+        {catData.map((item) => {
           return (
-            <div className={classes.box} key={index}>
-              <div className={classes.img}>
-                <Image
-                  src={cover}
-                  alt={title}
-                  height={300}
-                  width={300}
-                  className={classes.image}
-                />
-              </div>
+            <div className={classes.box} key={item.id}>
+              <h1>{item.name}</h1>
+              <p>{item.description}</p>
               <div className={classes.overlay}>
-                <h1>{title}</h1>
+                <div className={classes.linksContainer}>
+                  <Link href={item.githubLink}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={classes.link}
+                    >
+                      GitHub
+                    </a>
+                  </Link>
+                  {item.demoLink !== "" && (
+                    <Link href={item.demoLink}>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={classes.link}
+                      >
+                        Demo
+                      </a>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           );
