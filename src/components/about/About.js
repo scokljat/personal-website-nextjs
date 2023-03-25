@@ -1,9 +1,8 @@
 import Image from "next/image";
 import classes from "./About.module.css";
-import { motion } from "framer-motion";
-import globalClasses from "../styles/Global.module.css";
+import globalClasses from "../../styles/Global.module.css";
+
 function About({ data }) {
-  console.log(data);
   return (
     <section className={classes.about} id="about">
       <h1 className={globalClasses.title}>About me</h1>
