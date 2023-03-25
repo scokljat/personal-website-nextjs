@@ -2,6 +2,7 @@ import { useRef } from "react";
 import emailjs from "emailjs-com";
 import classes from "./Contact.module.css";
 import globalClasses from "../../styles/Global.module.css";
+
 function Contact() {
   const form = useRef();
 
@@ -48,7 +49,7 @@ function Contact() {
         <button
           type="submit"
           className={globalClasses.button}
-          style={{ width: "20%", alignSelf: "center" }}
+          style={{ width: "40%", alignSelf: "center" }}
         >
           Send Message
         </button>

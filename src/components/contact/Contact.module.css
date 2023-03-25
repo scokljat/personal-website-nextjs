@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .form_container {
@@ -13,44 +13,32 @@
   background: #1f242d;
   width: 50%;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   gap: 1rem;
-  margin-top: 10px;
+  margin-top: 0.63rem;
 }
 
 .input_container {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 1px solid gray;
+  border: 0.06rem solid gray;
   resize: none;
 }
 
-.button {
-  background: #fca61f;
-  width: 20%;
-  padding: 15px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 35px;
-  box-shadow: 0 0 85px 0 #e9eefc;
-  border: 1px solid transparent;
-  transition: all 0.3s;
-  margin-top: 10px;
-  align-self: center;
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 3rem;
+    height: auto;
+  }
+
+  .form_container {
+    width: 80%;
+  }
 }
 
-.button:hover {
-  background: #6f34fe;
-}
-
-.title {
-  color: #6f34fe;
-  margin-bottom: 0;
-}
-
-.line {
-  border: 2px solid #fca61f;
-  width: 5%;
+@media (max-width: 470px) {
+  .form_container {
+    width: 100%;
+  }
 }
