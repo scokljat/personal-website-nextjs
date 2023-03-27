@@ -3,9 +3,10 @@
   height: 60px;
   position: fixed;
   top: 0;
-  background: #1f242d;
+  background: #0b1120;
   z-index: 1;
   padding-right: 10px;
+  border-bottom: 1px solid #20283b;
 }
 
 .navbar_container {
