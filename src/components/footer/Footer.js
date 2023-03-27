@@ -6,7 +6,7 @@ import classes from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={classes.footer}>
-      {personalInformations.contactLinks.map((link) => (
+      {personalInformations?.contactLinks?.map((link) => (
         <Link href={link.name} key={link.id}>
           <a target="_blank" rel="noopener noreferrer">
             <Image src={link.logo} height={30} width={30} alt="" />

@@ -11,16 +11,16 @@ function About({ data }) {
         <div>
           <div className={classes.image}>
             <Image
-              src={data.image}
-              alt={data.name}
+              src={data?.image}
+              alt={data?.name}
               layout={"fill"}
               objectFit={"contain"}
             />
           </div>
         </div>
         <div className={classes.about_description}>
-          <h4>Education: {data.education}</h4>
-          <p>{data.aboutDescription}</p>
+          <h4>Education: {data?.education}</h4>
+          <p>{data?.aboutDescription}</p>
         </div>
       </div>
     </section>
