@@ -12,7 +12,7 @@ function extractData(filePath) {
 
 export default function handler(req, res) {
   const filePath = buildPath();
-  const { personalInformations } = extractData(filePath);
+  const { personalInformations, projects, skills } = extractData(filePath);
 
-  return res.status(200).json({ personalInformations });
+  return res.status(200).json({ personalInformations, projects, skills });
 }
