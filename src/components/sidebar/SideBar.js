@@ -1,55 +1,73 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
-import { useRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { navigation } from "@/utils/Constants";
 import classes from "./SideBar.module.css";
 
-function SideBar({ menuIsOpen, setMenuIsOpen }) {
-  const sideBarRef = useRef(null);
+function SideBar() {
+  const [sideBarIsOpen, setSideBarIsOpen] = useState(false);
+  const ref = useRef(null);
   const router = useRouter();
 
-  // useEffect(() => {
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
+  useOnClickOutside(ref, () => setSideBarIsOpen(false));
 
-  // function handleClickOutside(event) {
-  //   if (sideBarRef.current && !sideBarRef.current.contains(event.target)) {
-  //     setMenuIsOpen(false);
-  //   }
-  // }
   return (
-    <motion.ul
+    <motion.div
       className={classes.container}
-      ref={sideBarRef}
+      ref={ref}
       animate={{
-        width: menuIsOpen ? 150 : 10,
+        width: sideBarIsOpen ? 150 : 50,
       }}
     >
-      {navigation.map((item, index) => (
-        <li className={classes.item_container} key={index}>
-          <Link href={item.href} passHref>
-            <a
-              className={
-                router.asPath === `/${item.href}`
-                  ? classes.active
-                  : classes.nonActive
-              }
-              onClick={() => {
-                setMenuIsOpen(false);
-              }}
-            >
-              {item.name}
-            </a>
-          </Link>
-          <hr className={classes.line} />
-        </li>
-      ))}
-    </motion.ul>
+      <div
+        className={classes.image}
+        onClick={() => setSideBarIsOpen(!sideBarIsOpen)}
+      >
+        <Image src={"/images/arrow.svg"} height={15} width={15} />
+      </div>
+
+      <ul style={{ opacity: sideBarIsOpen ? 1 : 0 }}>
+        {navigation.map((item, index) => (
+          <li className={classes.item_container} key={index}>
+            <Link href={item.href} passHref>
+              <a
+                className={
+                  router.asPath === `/${item.href}`
+                    ? classes.active
+                    : classes.nonActive
+                }
+                onClick={() => {
+                  setSideBarIsOpen(false);
+                }}
+              >
+                {item.name}
+              </a>
+            </Link>
+            <hr className={classes.line} />
+          </li>
+        ))}
+      </ul>
+    </motion.div>
   );
 }
 
 export default SideBar;
+
+function useOnClickOutside(ref, handler) {
+  useEffect(() => {
+    const listener = (event) => {
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+      handler(event);
+    };
+    document.addEventListener("mousedown", listener);
+    document.addEventListener("touchstart", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+      document.removeEventListener("touchstart", listener);
+    };
+  }, [ref, handler]);
+}
