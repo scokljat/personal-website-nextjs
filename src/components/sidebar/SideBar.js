@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import { navigation } from "@/utils/Constants";
-import classes from "./MenuList.module.css";
+import classes from "./SideBar.module.css";
 
-function MenuList({ setMenuIsOpen }) {
+function SideBar({ setMenuIsOpen }) {
   const sideBarRef = useRef(null);
   const router = useRouter();
 
@@ -21,7 +22,17 @@ function MenuList({ setMenuIsOpen }) {
     }
   }
   return (
-    <ul className={classes.container} ref={sideBarRef}>
+    <motion.ul
+      className={classes.container}
+      ref={sideBarRef}
+      initial={{ width: 0 }}
+      animate={{
+        width: 150,
+      }}
+      exit={{
+        width: 0,
+      }}
+    >
       {navigation.map((item, index) => (
         <li className={classes.item_container}>
           <Link href={item.href} passHref key={index}>
@@ -41,8 +52,8 @@ function MenuList({ setMenuIsOpen }) {
           <hr className={classes.line} />
         </li>
       ))}
-    </ul>
+    </motion.ul>
   );
 }
 
-export default MenuList;
+export default SideBar;

@@ -42,8 +42,21 @@
   color: #fff;
 }
 
-@media (min-width: 768px) {
+.toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .toggle {
+    display: inline;
+    padding: 0 15px;
+    padding-top: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar_right {
     display: none;
   }
 }

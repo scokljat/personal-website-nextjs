@@ -1,19 +1,20 @@
-import { useState } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import { navigation } from "@/utils/Constants";
+import SideBar from "../sidebar/SideBar";
 import classes from "./NavBar.module.css";
 
 function NavBar() {
-  const [state, setState] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const router = useRouter();
 
   return (
-    <nav className={classes.navbar}>
-      <div className={classes.navbar_container}>
-        {state ? (
+    <>
+      <nav className={classes.navbar}>
+        <div className={classes.navbar_container}>
           <ul className={classes.navbar_right}>
             {navigation.map((item, index) => (
               <li>
@@ -31,14 +32,20 @@ function NavBar() {
               </li>
             ))}
           </ul>
-        ) : (
-          ""
-        )}
-      </div>
-      <div className={classes.toggle} onClick={() => setState(!state)}>
-        <FaAlignJustify />
-      </div>
-    </nav>
+
+          <div
+            className={classes.toggle}
+            onClick={(e) => {
+              e.stopPropagation();
+              setMenuIsOpen(!menuIsOpen);
+            }}
+          >
+            <FaAlignJustify />
+          </div>
+        </div>
+      </nav>
+      {menuIsOpen && <SideBar setMenuIsOpen={setMenuIsOpen} />}
+    </>
   );
 }
 
