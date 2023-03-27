@@ -44,8 +44,8 @@
 .image {
   cursor: pointer;
   padding: 0.93rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.18rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.48rem;
   border-bottom: 0.06rem solid #20283b;
   display: flex;
   justify-content: flex-end;
