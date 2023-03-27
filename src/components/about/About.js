@@ -10,12 +10,14 @@ function About({ data }) {
       <div className={classes.about_container}>
         <div>
           <div className={classes.image}>
-            <Image
-              src={data?.image}
-              alt={data?.name}
-              layout={"fill"}
-              objectFit={"contain"}
-            />
+            {data?.image && (
+              <Image
+                src={data?.image}
+                alt={data?.name}
+                layout={"fill"}
+                objectFit={"contain"}
+              />
+            )}
           </div>
         </div>
         <div className={classes.about_description}>

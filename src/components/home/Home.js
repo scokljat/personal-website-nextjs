@@ -18,13 +18,15 @@ function HomeHeader({ data }) {
         </div>
       </div>
       <div>
-        <Image
-          className={classes.image}
-          src={data?.image}
-          alt={data?.name}
-          width={300}
-          height={300}
-        />
+        {data?.image && (
+          <Image
+            className={classes.image}
+            src={data?.image}
+            alt={data?.name}
+            width={300}
+            height={300}
+          />
+        )}
       </div>
     </section>
   );
