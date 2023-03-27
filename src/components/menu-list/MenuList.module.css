@@ -1,0 +1,49 @@
+.container {
+  width: 30%;
+  height: 100%;
+  background: #1f242d;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 3.7rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.93rem;
+}
+
+.container a {
+  text-decoration: none;
+  padding: 0.63rem;
+  font-size: 0.93rem;
+}
+
+.item_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_container:hover {
+  background: #323946;
+}
+
+.menu_item {
+  padding: 0 0.93rem;
+  cursor: pointer;
+}
+
+.line {
+  border: 0.06rem solid #000;
+  width: 90%;
+  margin: 0rem;
+  align-self: center;
+}
+
+.active {
+  color: #c85c8e;
+}
+
+.nonActive {
+  color: #fff;
+}
