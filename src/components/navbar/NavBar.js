@@ -38,13 +38,14 @@ function NavBar() {
             onClick={(e) => {
               e.stopPropagation();
               setMenuIsOpen(!menuIsOpen);
+              console.log(menuIsOpen);
             }}
           >
             <FaAlignJustify />
           </div>
         </div>
       </nav>
-      {menuIsOpen && <SideBar setMenuIsOpen={setMenuIsOpen} />}
+      <SideBar menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
     </>
   );
 }

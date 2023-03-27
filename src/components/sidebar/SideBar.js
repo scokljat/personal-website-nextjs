@@ -5,32 +5,28 @@ import { motion } from "framer-motion";
 import { navigation } from "@/utils/Constants";
 import classes from "./SideBar.module.css";
 
-function SideBar({ setMenuIsOpen }) {
+function SideBar({ menuIsOpen, setMenuIsOpen }) {
   const sideBarRef = useRef(null);
   const router = useRouter();
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
-  function handleClickOutside(event) {
-    if (sideBarRef.current && !sideBarRef.current.contains(event.target)) {
-      setMenuIsOpen(false);
-    }
-  }
+  // function handleClickOutside(event) {
+  //   if (sideBarRef.current && !sideBarRef.current.contains(event.target)) {
+  //     setMenuIsOpen(false);
+  //   }
+  // }
   return (
     <motion.ul
       className={classes.container}
       ref={sideBarRef}
-      initial={{ width: 0 }}
       animate={{
-        width: 150,
-      }}
-      exit={{
-        width: 0,
+        width: menuIsOpen ? 150 : 10,
       }}
     >
       {navigation.map((item, index) => (

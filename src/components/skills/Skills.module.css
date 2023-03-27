@@ -8,7 +8,7 @@
 }
 
 .skills_box {
-  background: #1f242d;
+  background: #101828;
   width: 80%;
   border-radius: 0.3rem;
   display: grid;
@@ -19,7 +19,7 @@
 }
 
 .skill_item {
-  background: #323946;
+  background: #20283b;
   border-radius: 0.3rem;
   transition: all 0.2s ease-in-out;
   display: flex;
