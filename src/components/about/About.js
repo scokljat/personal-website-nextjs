@@ -8,7 +8,16 @@ function About({ data }) {
       <h1 className={globalClasses.title}>About me</h1>
       <hr className={globalClasses.title_line} />
       <div className={classes.about_container}>
-        <Image src={"/selma.jpg"} height={300} width={250} />
+        <div>
+          <div className={classes.image}>
+            <Image
+              src={data.image}
+              alt={data.name}
+              layout={"fill"}
+              objectFit={"contain"}
+            />
+          </div>
+        </div>
         <div className={classes.about_description}>
           <h4>Education: {data.education}</h4>
           <p>{data.aboutDescription}</p>
