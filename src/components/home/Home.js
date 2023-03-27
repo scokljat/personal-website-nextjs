@@ -1,18 +1,19 @@
 import Image from "next/image";
-import classes from "./Header.module.css";
+import classes from "./Home.module.css";
+import globalclasses from "../../styles/Global.module.css";
 
-function Header({ data }) {
+function HomeHeader({ data }) {
   return (
-    <section className={classes.header}>
+    <section className={classes.container}>
       <div className={classes.row}>
-        <div className={classes.header_content}>
+        <div className={classes.content}>
           <div className={classes.title}>
             <h5>Hello, I Am </h5>
             <h1>{data.name}</h1>
           </div>
           <p>{data.description}</p>
           <a href={data.resume} download>
-            <button className={classes.button}>Download resume</button>
+            <button className={globalclasses.button}>Download resume</button>
           </a>
         </div>
       </div>
@@ -29,4 +30,4 @@ function Header({ data }) {
   );
 }
 
-export default Header;
+export default HomeHeader;

@@ -1,0 +1,104 @@
+.container {
+  background: #1f242d;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  padding: 0 9.3rem;
+  gap: 1.8rem;
+}
+
+.row {
+  display: flex;
+  width: 80%;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.title h1 {
+  color: #c85c8e;
+  margin-bottom: 0rem;
+}
+
+.title h5 {
+  margin-bottom: 0rem;
+}
+
+.content p {
+  font-size: 0.93rem;
+  margin-bottom: 1.6rem;
+  line-height: 2.06rem;
+  font-family: "Lato", sans-serif;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 3.1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    padding: 1.25rem;
+    gap: 0rem;
+  }
+
+  .container p {
+    font-size: 0.75rem;
+  }
+
+  .title {
+    gap: 0.63rem;
+  }
+
+  .title h1 {
+    font-size: 1.25rem;
+    margin: 0rem;
+  }
+
+  .title h5 {
+    font-size: 0.93rem;
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .container {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title h1 {
+    font-size: 0.93rem;
+    margin: 0rem;
+  }
+
+  .title h5 {
+    font-size: 0.75rem;
+  }
+}
