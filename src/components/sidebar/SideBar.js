@@ -34,8 +34,8 @@ function SideBar({ setMenuIsOpen }) {
       }}
     >
       {navigation.map((item, index) => (
-        <li className={classes.item_container}>
-          <Link href={item.href} passHref key={index}>
+        <li className={classes.item_container} key={index}>
+          <Link href={item.href} passHref>
             <a
               className={
                 router.asPath === `/${item.href}`
