@@ -26,3 +26,14 @@
   box-shadow: 0 0 10px 0 #ffbaba;
   color: #000;
 }
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
