@@ -26,10 +26,10 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeHeader data={data.personalInformations} />
-        <Portfolio data={data.projects} />
-        <About data={data.personalInformations} />
-        <Skills data={data.skills} />
+        <HomeHeader data={data?.personalInformations} />
+        <Portfolio data={data?.projects} />
+        <About data={data?.personalInformations} />
+        <Skills data={data?.skills} />
         <Contact />
       </main>
     </>
