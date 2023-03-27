@@ -7,8 +7,9 @@ import Portfolio from "@/components/portfolio/Portfolio";
 import About from "@/components/about/About";
 import Skills from "@/components/skills/Skills";
 import Contact from "@/components/contact/Contact";
+import { personalInformations, projects, skills } from "../data/data.json";
 
-export default function Home({ data }) {
+export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
@@ -26,22 +27,12 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeHeader data={data?.personalInformations} />
-        <Portfolio data={data?.projects} />
-        <About data={data?.personalInformations} />
-        <Skills data={data?.skills} />
+        <HomeHeader data={personalInformations} />
+        <Portfolio data={projects} />
+        <About data={personalInformations} />
+        <Skills data={skills} />
         <Contact />
       </main>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/personal-website");
-  const data = await res.json();
-
-  return {
-    props: { data },
-    revalidate: 1,
-  };
 }
