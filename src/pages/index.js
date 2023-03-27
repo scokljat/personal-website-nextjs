@@ -1,16 +1,22 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
+import { useRouter } from "next/router";
+import Router from "next/router";
+import { useEffect } from "react";
+import HomeHeader from "@/components/home/Home";
 import Portfolio from "@/components/portfolio/Portfolio";
-import About from "@/components/About";
-import Services from "@/components/services/Services";
+import About from "@/components/about/About";
+import Skills from "@/components/skills/Skills";
 import Contact from "@/components/contact/Contact";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home({ data }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath == "/") {
+      Router.push("/#");
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -20,10 +26,10 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header data={data.personalInformations} />
-        <Portfolio />
-        <About />
-        <Services />
+        <HomeHeader data={data.personalInformations} />
+        <Portfolio data={data.projects} />
+        <About data={data.personalInformations} />
+        <Skills data={data.skills} />
         <Contact />
       </main>
     </>
