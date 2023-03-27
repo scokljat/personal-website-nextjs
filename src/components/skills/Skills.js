@@ -9,7 +9,7 @@ function Skills({ data }) {
       <hr className={globalClasses.title_line} />
       <div className={classes.skills_box}>
         {data.map((item) => (
-          <div className={classes.skill_item}>
+          <div className={classes.skill_item} key={item.id}>
             <Image src={item.image} alt={item.name} height={80} width={80} />
             <h1>{item.name}</h1>
           </div>

@@ -8,7 +8,7 @@ function Footer({ data }) {
       {data.personalInformations.contactLinks.map((link) => (
         <Link href={link.name} key={link.id}>
           <a target="_blank" rel="noopener noreferrer">
-            <Image src={link.logo} height={30} width={30} />
+            <Image src={link.logo} height={30} width={30} alt="" />
           </a>
         </Link>
       ))}

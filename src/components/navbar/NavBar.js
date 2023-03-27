@@ -17,8 +17,8 @@ function NavBar() {
         <div className={classes.navbar_container}>
           <ul className={classes.navbar_right}>
             {navigation.map((item, index) => (
-              <li>
-                <Link href={item.href} passHref key={index}>
+              <li key={index}>
+                <Link href={item.href} passHref>
                   <a
                     className={
                       router.asPath === `/${item.href}`
