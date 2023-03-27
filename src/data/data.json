@@ -4,7 +4,9 @@
     "role": "Software Engineer",
     "description": "Software Developer adept in bringing forth expertise in design, testing and maintenance of web applications. Proficient in various platforms and languages. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
     "resume": "/selma_cokljat_resume.pdf",
-    "image": "/selma.jpg",
+    "image": "/images/profile_photo.jpg",
+    "education": "Faculty Of Electrical Engineering",
+    "aboutDescription": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates toTaken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates toTaken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to",
     "contactLinks": [
       { "id": 1, "name": "https://github.com/scokljat", "logo": "/github.png" },
       {
@@ -18,29 +20,82 @@
     {
       "id": 1,
       "name": "Ask app",
-      "image": "",
       "githubLink": "https://github.com/scokljat/ask-app-client",
       "demoLink": "https://ask-app-client-two.vercel.app/",
       "category": "React",
-      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+      "description": "An application where registered users can ask questions and answer questions from other registered users. Registered users can also like and dislike the questions and answers they want."
     },
     {
       "id": 2,
-      "name": "Welcome Bot",
-      "image": "/welcome-bot.png",
-      "githubLink": "https://github.com/scokljat/welcome-bot-frontend",
-      "demoLink": "https://welcome-bot-nsoft.netlify.app/auth",
-      "category": "Vue",
-      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+      "name": "Personal Website",
+      "githubLink": "https://github.com/scokljat/personal-website-nextjs",
+      "demoLink": "",
+      "category": "Next",
+      "description": ""
     },
     {
       "id": 3,
+      "name": "Movies app",
+      "githubLink": "https://github.com/scokljat/movies-app-client",
+      "demoLink": "https://movies-app-client.vercel.app/movies",
+      "category": "React",
+      "description": ""
+    },
+    {
+      "id": 4,
       "name": "Welcome Bot",
-      "image": "",
       "githubLink": "https://github.com/scokljat/welcome-bot-frontend",
-      "demoLink": "",
+      "demoLink": "https://welcome-bot-nsoft.netlify.app/auth",
       "category": "Vue",
-      "description": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to"
+      "description": "A no-code platform for building slack bots."
+    },
+    {
+      "id": 5,
+      "name": "Instagram Clone",
+      "githubLink": "https://github.com/scokljat/instagram-clone-client",
+      "demoLink": "",
+      "category": "React&Node",
+      "description": "A small, lean and pretty project based learning results heavily inspired by Instagram."
+    },
+    {
+      "id": 6,
+      "name": "Confessions app",
+      "githubLink": "https://github.com/scokljat/confessions-app-client",
+      "demoLink": "https://confessions-app-client.vercel.app/",
+      "category": "React&Node",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "name": "Events app",
+      "githubLink": "https://github.com/scokljat/events-app-nextjs",
+      "demoLink": "https://events-app-nextjs-eight.vercel.app/",
+      "category": "Next",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "name": "Meets app",
+      "githubLink": "https://github.com/scokljat/meetups-app-nextjs",
+      "demoLink": "https://meetups-app-nextjs-ecru.vercel.app/",
+      "category": "Next",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "name": "Employee management",
+      "githubLink": "https://github.com/scokljat/employee-management-nextjs",
+      "demoLink": "https://employee-management-nextjs.vercel.app/",
+      "category": "Next",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "name": "Coronavirus statistcs",
+      "githubLink": "https://github.com/scokljat/coronavirus-statstics-react",
+      "demoLink": "",
+      "category": "React",
+      "description": ""
     }
   ],
   "skills": [
