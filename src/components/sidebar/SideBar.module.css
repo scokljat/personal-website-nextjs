@@ -54,3 +54,41 @@
 .container ul {
   padding: 0rem 0.63rem;
 }
+
+.rotate {
+  animation: rotate 0.3s ease-in forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.rotateBack {
+  animation: rotateBack 0.3s ease-in forwards;
+}
+
+@keyframes rotateBack {
+  100% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 0;
+  }
+
+  .image {
+    display: none;
+  }
+}

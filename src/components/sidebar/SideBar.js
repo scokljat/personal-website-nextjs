@@ -25,7 +25,12 @@ function SideBar() {
         className={classes.image}
         onClick={() => setSideBarIsOpen(!sideBarIsOpen)}
       >
-        <Image src={"/images/arrow.svg"} height={15} width={15} />
+        <Image
+          src={"/images/arrow.svg"}
+          height={15}
+          width={15}
+          className={sideBarIsOpen ? classes.rotate : classes.rotateBack}
+        />
       </div>
 
       <ul style={{ opacity: sideBarIsOpen ? 1 : 0 }}>
