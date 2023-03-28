@@ -1,94 +1,86 @@
-.container {
-  height: 100%;
-  background: #0b1120;
-  position: fixed;
-  z-index: 1;
-  right: 0;
-}
-
-.container a {
-  text-decoration: none;
-  padding: 0.63rem;
-  font-size: 0.93rem;
-}
-
-.item_container {
-  display: flex;
-  flex-direction: column;
-}
-
-.item_container:hover {
-  background: #323946;
-}
-
-.menu_item {
-  padding: 0 0.93rem;
-  cursor: pointer;
-}
-
-.line {
-  border: 0.06rem solid #000;
-  width: 90%;
-  margin: 0rem;
-  align-self: center;
-}
-
-.active {
-  color: #c85c8e;
-}
-
-.nonActive {
-  color: #fff;
-}
-
-.image {
-  cursor: pointer;
-  padding: 0.93rem;
-  padding-top: 1.3rem;
-  padding-bottom: 1.48rem;
-  border-bottom: 0.06rem solid #20283b;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.container ul {
-  padding: 0rem 0.63rem;
-}
-
-.rotate {
-  animation: rotate 0.3s ease-in forwards;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(-180deg);
-  }
-}
-
-.rotateBack {
-  animation: rotateBack 0.3s ease-in forwards;
-}
-
-@keyframes rotateBack {
-  100% {
-    transform: rotate(0deg);
-  }
-
-  0% {
-    transform: rotate(-180deg);
-  }
-}
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    width: 0;
+    height: 100%;
+    background: #0b1120;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+  }
+
+  .container a {
+    text-decoration: none;
+    padding: 0.63rem;
+    font-size: 0.93rem;
+  }
+
+  .item_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item_container:hover {
+    background: #323946;
+  }
+
+  .menu_item {
+    padding: 0 0.93rem;
+    cursor: pointer;
+  }
+
+  .line {
+    border: 0.06rem solid #000;
+    width: 90%;
+    margin: 0rem;
+    align-self: center;
+  }
+
+  .active {
+    color: #c85c8e;
+  }
+
+  .nonActive {
+    color: #fff;
   }
 
   .image {
-    display: none;
+    cursor: pointer;
+    padding: 0.93rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.48rem;
+    border-bottom: 0.06rem solid #20283b;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container ul {
+    padding: 0rem 0.63rem;
+  }
+
+  .rotate {
+    animation: rotate 0.3s ease-in forwards;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .rotateBack {
+    animation: rotateBack 0.3s ease-in forwards;
+  }
+
+  @keyframes rotateBack {
+    100% {
+      transform: rotate(0deg);
+    }
+
+    0% {
+      transform: rotate(-180deg);
+    }
   }
 }
