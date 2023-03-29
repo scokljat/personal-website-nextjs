@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import classes from "./About.module.css";
 import globalClasses from "../../styles/Global.module.css";
 
@@ -21,8 +22,19 @@ function About({ data }) {
           </div>
         </div>
         <div className={classes.about_description}>
-          <h4>Education: {data?.education}</h4>
           <p>{data?.aboutDescription}</p>
+          <h4>{data?.contactDescription}</h4>
+          <div className={classes.contactContainer}>
+            {data?.contactLinks?.map((link) => (
+              <Link href={link.name} key={link.id}>
+                <a target="_blank" rel="noopener noreferrer">
+                  {link?.logo && (
+                    <Image src={link.logo} height={40} width={40} alt="" />
+                  )}
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
