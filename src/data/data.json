@@ -5,15 +5,15 @@
     "description": "Software Developer adept in bringing forth expertise in design, testing and maintenance of web applications. Proficient in various platforms and languages. Experienced with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.",
     "resume": "/selma_cokljat_resume.pdf",
     "image": "/images/profile_photo.jpg",
-    "education": "Faculty Of Electrical Engineering",
-    "aboutDescription": "Taken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates toTaken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates toTaken from the Latin words dolorem ipsum, which translates to Taken from the Latin words dolorem ipsum, which translates to",
+    "contactDescription": "You can visit me on my linkedIn profile or view my gitHub profile :",
+    "aboutDescription": "I'm Selma and I graduated with a master's degree in electrical engineering. A year ago, I started actively learning programming. I was studying Node JS for backend and React with Redux for frontend development. I also made one project with Vue JS on an internship. I prefer the frontend development because it's closer to user. Making the UI of webiste is very interesting to me. I want to progress a lot and I'm currently learning Next JS. I'm communicative and friendly person.",
     "contactLinks": [
-      { "id": 1, "name": "https://github.com/scokljat", "logo": "/github.png" },
       {
-        "id": 2,
+        "id": 1,
         "name": "https://www.linkedin.com/in/selma-cokljat/",
         "logo": "/linkedin.png"
-      }
+      },
+      { "id": 2, "name": "https://github.com/scokljat", "logo": "/github.png" }
     ]
   },
   "projects": [
@@ -31,7 +31,7 @@
       "githubLink": "https://github.com/scokljat/personal-website-nextjs",
       "demoLink": "",
       "category": "Next",
-      "description": ""
+      "description": "It's my personal webiste with my resume and all my projects."
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "githubLink": "https://github.com/scokljat/movies-app-client",
       "demoLink": "https://movies-app-client.vercel.app/movies",
       "category": "React",
-      "description": ""
+      "description": "The app has functionalities of displaying the top 10 rated TV shows and the top 10 movies, a search function for both and a detailed view for individual items."
     },
     {
       "id": 4,
@@ -63,7 +63,7 @@
       "githubLink": "https://github.com/scokljat/confessions-app-client",
       "demoLink": "https://confessions-app-client.vercel.app/",
       "category": "React&Node",
-      "description": ""
+      "description": "The user can post his confession and answer anonymously. Also he can like and dislike confessions."
     },
     {
       "id": 7,
@@ -87,7 +87,7 @@
       "githubLink": "https://github.com/scokljat/employee-management-nextjs",
       "demoLink": "https://employee-management-nextjs.vercel.app/",
       "category": "Next",
-      "description": ""
+      "description": "A simple app made with Next JS where the user can add a new employee with his status and salary. He can also delete and update current employees."
     },
     {
       "id": 10,
@@ -95,7 +95,7 @@
       "githubLink": "https://github.com/scokljat/coronavirus-statstics-react",
       "demoLink": "",
       "category": "React",
-      "description": ""
+      "description": "A simple app of the statistics of people infected and dead from the coronavirus."
     }
   ],
   "skills": [
