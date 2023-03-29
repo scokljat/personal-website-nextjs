@@ -89,4 +89,8 @@
   .container {
     display: none;
   }
+
+  .container ul {
+    display: none;
+  }
 }
