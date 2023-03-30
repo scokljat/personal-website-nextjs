@@ -12,13 +12,3 @@ body {
   background: #0b1120;
   color: #fff;
 }
-
-.title {
-  color: #c85c8e;
-  margin-bottom: 0;
-}
-
-.title_line {
-  border: 2px solid #c85c8e;
-  width: 5%;
-}
