@@ -1,12 +1,12 @@
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   position: fixed;
   top: 0;
   background: #0b1120;
   z-index: 1;
-  padding-right: 10px;
-  border-bottom: 1px solid #20283b;
+  padding-right: 0.63rem;
+  border-bottom: 0.06rem solid #20283b;
 }
 
 .navbar_container {
@@ -16,7 +16,7 @@
 }
 
 .navbar_left_logo {
-  width: 110px;
+  width: 6.8rem;
 }
 
 .navbar_right {
@@ -27,8 +27,8 @@
 .navbar_right li a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
-  padding: 0 15px;
+  font-size: 0.93rem;
+  padding: 0 0.93rem;
 }
 
 .navbar_right li a:hover {
@@ -50,8 +50,8 @@
 @media (max-width: 768px) {
   .toggle {
     display: inline;
-    padding: 0 15px;
-    padding-top: 20px;
+    padding: 0 0.93rem;
+    padding-top: 1.25rem;
     cursor: pointer;
   }
 }
