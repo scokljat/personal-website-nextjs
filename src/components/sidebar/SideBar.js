@@ -30,6 +30,7 @@ function SideBar() {
           height={15}
           width={15}
           className={sideBarIsOpen ? classes.rotate : classes.rotateBack}
+          alt=""
         />
       </div>
 
