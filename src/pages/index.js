@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Router from "next/router";
 import { useEffect } from "react";
 import HomeHeader from "@/components/home/Home";
 import Portfolio from "@/components/portfolio/Portfolio";
@@ -14,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     if (router.asPath == "/") {
-      Router.push("/#");
+      router.push("/#");
     }
   }, []);
 
