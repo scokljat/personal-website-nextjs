@@ -11,9 +11,13 @@
       {
         "id": 1,
         "name": "https://www.linkedin.com/in/selma-cokljat/",
-        "logo": "/linkedin.png"
+        "logo": "/images/linkedin.png"
       },
-      { "id": 2, "name": "https://github.com/scokljat", "logo": "/github.png" }
+      {
+        "id": 2,
+        "name": "https://github.com/scokljat",
+        "logo": "/images/github.png"
+      }
     ]
   },
   "projects": [
@@ -99,14 +103,14 @@
     }
   ],
   "skills": [
-    { "id": 1, "name": "React", "image": "/react.png" },
-    { "id": 2, "name": "Next", "image": "/next.svg" },
-    { "id": 3, "name": "Vue", "image": "/vue.png" },
+    { "id": 1, "name": "React", "image": "/images/react.png" },
+    { "id": 2, "name": "Next", "image": "/images/next.svg" },
+    { "id": 3, "name": "Vue", "image": "/images/vue.png" },
     { "id": 4, "name": "JavaScript", "image": "/java-script.png" },
-    { "id": 5, "name": "Node", "image": "/node.png" },
-    { "id": 6, "name": "HTML", "image": "/html.png" },
-    { "id": 7, "name": "CSS", "image": "/css.png" },
-    { "id": 8, "name": "MongoDB", "image": "/mongo.png" },
-    { "id": 9, "name": "PostgreSQL", "image": "/postgresql.png" }
+    { "id": 5, "name": "Node", "image": "/images/node.png" },
+    { "id": 6, "name": "HTML", "image": "/images/html.png" },
+    { "id": 7, "name": "CSS", "image": "/images/css.png" },
+    { "id": 8, "name": "MongoDB", "image": "/images/mongo.png" },
+    { "id": 9, "name": "PostgreSQL", "image": "/images/postgresql.png" }
   ]
 }
