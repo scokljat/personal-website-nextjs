@@ -23,6 +23,14 @@
   "projects": [
     {
       "id": 1,
+      "name": "e-commerce",
+      "githubLink": "https://github.com/scokljat/e-commerce-client",
+      "demoLink": "",
+      "category": "React&Node",
+      "description": "An e-commerce web app for online shopping with stripe payment form."
+    },
+    {
+      "id": 2,
       "name": "Ask app",
       "githubLink": "https://github.com/scokljat/ask-app-client",
       "demoLink": "https://ask-app-client-two.vercel.app/",
@@ -30,7 +38,7 @@
       "description": "An application where registered users can ask questions and answer questions from other registered users. Registered users can also like and dislike the questions and answers they want."
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Personal Website",
       "githubLink": "https://github.com/scokljat/personal-website-nextjs",
       "demoLink": "",
@@ -38,7 +46,7 @@
       "description": "It's my personal webiste with my resume and all my projects."
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Movies app",
       "githubLink": "https://github.com/scokljat/movies-app-client",
       "demoLink": "https://movies-app-client.vercel.app/movies",
@@ -46,7 +54,7 @@
       "description": "The app has functionalities of displaying the top 10 rated TV shows and the top 10 movies, a search function for both and a detailed view for individual items."
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Welcome Bot",
       "githubLink": "https://github.com/scokljat/welcome-bot-frontend",
       "demoLink": "https://welcome-bot-nsoft.netlify.app/auth",
@@ -54,7 +62,7 @@
       "description": "A no-code platform for building slack bots."
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Instagram Clone",
       "githubLink": "https://github.com/scokljat/instagram-clone-client",
       "demoLink": "",
@@ -62,7 +70,7 @@
       "description": "A small, lean and pretty project based learning results heavily inspired by Instagram."
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Confessions app",
       "githubLink": "https://github.com/scokljat/confessions-app-client",
       "demoLink": "https://confessions-app-client.vercel.app/",
@@ -70,7 +78,7 @@
       "description": "The user can post his confession and answer anonymously. Also he can like and dislike confessions."
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Events app",
       "githubLink": "https://github.com/scokljat/events-app-nextjs",
       "demoLink": "https://events-app-nextjs-eight.vercel.app/",
@@ -78,7 +86,7 @@
       "description": ""
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Meets app",
       "githubLink": "https://github.com/scokljat/meetups-app-nextjs",
       "demoLink": "https://meetups-app-nextjs-ecru.vercel.app/",
@@ -86,7 +94,7 @@
       "description": ""
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Employee management",
       "githubLink": "https://github.com/scokljat/employee-management-nextjs",
       "demoLink": "https://employee-management-nextjs.vercel.app/",
@@ -94,7 +102,7 @@
       "description": "A simple app made with Next JS where the user can add a new employee with his status and salary. He can also delete and update current employees."
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Coronavirus statistcs",
       "githubLink": "https://github.com/scokljat/coronavirus-statstics-react",
       "demoLink": "",
