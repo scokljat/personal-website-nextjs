@@ -27,7 +27,7 @@
       "githubLink": "https://github.com/scokljat/e-commerce-client",
       "demoLink": "",
       "category": "React&Node",
-      "description": "An e-commerce web app for online shopping with stripe payment form."
+      "description": "An e-commerce web app for online shopping with stripe payment form. Registered users can choose and buy the products they want."
     },
     {
       "id": 2,
